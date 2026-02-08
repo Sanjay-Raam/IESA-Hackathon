@@ -4,7 +4,7 @@ import torchvision.models as models
 
 INPUT_MODEL_PATH = 'wafer_model.pth'   
 OUTPUT_ONNX_PATH = 'wafer.onnx'  
-NUM_CLASSES = 7                  
+NUM_CLASSES = 8                  
 
 def convert_to_onnx():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
